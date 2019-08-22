@@ -1,0 +1,6 @@
+<li [ngClass]="myClassesObject">
+    <h3>{{ this.post.title }} <span class="pull-right">{{ this.post.createdAt | date : 'short' | uppercase }}</span></h3>
+    <p>{{ this.post.content }}</p>
+    <button class="btn btn-success" (click)="onLoveIt()">Love it!</button>
+    <button class="btn btn-danger" (click)="onDontLoveIt()">Don't love it!</button>
+</li>
